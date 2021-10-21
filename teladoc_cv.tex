@@ -1,0 +1,123 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{079FAB}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{profile}
+\name{Brian}{Weedon}
+\position{Software Engineer}
+
+\mobile{(703) 898-3051}
+\email{bweedon03@gmail.com}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+{Company Recruitment Team}
+{Teladoc}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% How the letter is opened
+\letteropening{To whom it may concern,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+{\today}
+{Brian Weedon~~~·~~~Cover Letter}
+{}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+    \lettersection{About Me}
+    I'm a software engineer that has 8 years of experience working on applications of different sizes and types. At Proactis(then Perfect Commerce), I started off as an intern while I was in my final semesters of college at Christopher Newport University. When I graduated, I was offered a full-time position. I worked as a software engineer, adding value to the different multi-tenant products that I worked on. 
+
+    I left Proactis for Progeny Systems after two and a half years. At Progeny Systems, I worked on multiple smaller Java applications(most web applications), got a glimpse into the power of AWS and it's competitors with a couple web applications I worked on, and learned about the government contracting world. 
+
+    After a year and a half, I returned to Proactis as the lead(and only) developer on one of the products I worked on previously.  This product was a multi-tenant C\#/.NET application. Over the rest of my career at Proactis, I led development on two different Java multi-tenant web applications. I didn't enjoy being a lead at this company, but I was able to transition back to a software engineer, where I was able to focus more on adding value technically to the products, which I enjoyed much more.
+
+    \lettersection{Why Teladoc?}
+    Teladoc looks like a great company to work for, and Keith has said that he really enjoys working there as well. I think that virtual doctor visits will definitely be a big part of "going" to the doctor's office, especially when you are sick because of the convenience of it as well as being able to stay isolated and not spread germs.
+
+    From the "Senior Software Engineer, Java/Scala" job listing, it looks like you all value having a well-tested application and developers work in a fast-paced development environment. That is something that I am very interested in being a part of.
+
+    \lettersection{Why Me?}
+    I believe I would be a good fit for this position because I have worked with Java for most of my professional career. At my current company, I have worked on multiple enterprise level applications and been able to switch applications and start contributing meaningful code quickly.
+
+    I'm looking to grow as a developer and help provide value to a company and their product. I would love to do that while helping make doctor's more accessible and available to people who aren't able to make into their doctor's office.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
