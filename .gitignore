@@ -5,3 +5,4 @@
 resume.txt
 *.pdf
 *_cv.tex
+!default_cv.tex
