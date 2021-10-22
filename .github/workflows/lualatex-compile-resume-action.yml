@@ -1,5 +1,8 @@
 name: Compile Resume
-on: [push]
+on: 
+  push:
+    branches:
+      main
 jobs:
   Compile-Resume:
     runs-on: ubuntu-latest
@@ -21,6 +24,7 @@ jobs:
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Release
         uses: softprops/action-gh-release@v1
+        if: github.ref == 'refs/heads/main'
         with:
-          tag_name: ${{ steps.date.outputs.date }}
+          tag_name: my_resume
           files: weedon_resume.pdf
