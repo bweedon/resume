@@ -1,5 +1,9 @@
 name: Check Compile
-on: push
+on: 
+  push:
+    branches:
+      - '*'
+      - '!main'
 jobs:
   Compile-Resume:
     runs-on: ubuntu-latest
